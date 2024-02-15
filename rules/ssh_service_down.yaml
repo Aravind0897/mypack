@@ -5,8 +5,8 @@ enabled: true
 trigger:
   type: "core.st2.generic"
   parameters:
-    trigger.service: "ssh"
-    trigger.status: "down"
+    trigger_service: "ssh"
+    trigger_status: "down"
 action:
-  ref: mypacks.start_ssh
+  ref: mypack.start_ssh
   parameters: {}
