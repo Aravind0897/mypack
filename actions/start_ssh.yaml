@@ -1,0 +1,6 @@
+name: start_ssh
+description: Start the SSH service
+pack: mypack
+enabled: true
+runner_type: "local-shell-script"
+entry_point: "start_ssh.sh"

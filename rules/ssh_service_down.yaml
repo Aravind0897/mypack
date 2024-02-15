@@ -1,0 +1,12 @@
+name: ssh_service_down
+description: Start SSH service when it stops
+pack: mypack
+enabled: true
+trigger:
+  type: "core.st2.generic"
+  parameters:
+    trigger.service: "ssh"
+    trigger.status: "down"
+action:
+  ref: mypacks.start_ssh
+  parameters: {}
